@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terraform S3 Static Website</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI,Tahoma,Geneva,Verdana,sans-serif;
+}
+
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(-45deg,#0f172a,#1e3a8a,#0ea5e9,#06b6d4);
+background-size:400% 400%;
+animation:bg 12s ease infinite;
+overflow:hidden;
+}
+
+@keyframes bg{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+.card{
+width:700px;
+background:rgba(255,255,255,.12);
+backdrop-filter:blur(20px);
+padding:60px;
+border-radius:25px;
+text-align:center;
+color:white;
+box-shadow:0 20px 50px rgba(0,0,0,.35);
+}
+
+.logo{
+font-size:70px;
+margin-bottom:20px;
+}
+
+h1{
+font-size:42px;
+margin-bottom:20px;
+}
+
+p{
+font-size:20px;
+line-height:1.8;
+opacity:.95;
+}
+
+.btn{
+margin-top:35px;
+display:inline-block;
+padding:16px 40px;
+background:#ffffff;
+color:#0f172a;
+font-size:18px;
+font-weight:700;
+text-decoration:none;
+border-radius:50px;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-5px);
+background:#38bdf8;
+color:#fff;
+}
+
+.footer{
+margin-top:35px;
+font-size:15px;
+opacity:.8;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<div class="logo">☁️</div>
+
+<h1>Terraform + AWS S3</h1>
+
+<p>
+Congratulations! 🎉
+<br><br>
+Your static website has been deployed successfully using
+<b>Terraform</b> and <b>Amazon S3</b>.
+</p>
+
+<a href="https://aws.amazon.com/s3/" class="btn">
+Learn AWS S3
+</a>
+
+<div class="footer">
+Made with ❤️ using Terraform
+</div>
+
+</div>
+
+</body>
+</html>

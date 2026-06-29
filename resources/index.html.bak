@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AWS DevOps Infrastructure</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#0f172a,#1e3a8a,#0f766e);
+min-height:100vh;
+color:#fff;
+}
+
+.header{
+padding:30px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:30px;
+font-weight:700;
+color:#38bdf8;
+}
+
+.hero{
+padding:60px 8%;
+display:grid;
+grid-template-columns:1.2fr 1fr;
+gap:50px;
+align-items:center;
+}
+
+.hero h1{
+font-size:52px;
+line-height:1.2;
+margin-bottom:20px;
+}
+
+.hero h1 span{
+color:#22c55e;
+}
+
+.hero p{
+font-size:18px;
+line-height:1.8;
+color:#d1d5db;
+margin-bottom:30px;
+}
+
+.button{
+display:inline-block;
+padding:15px 35px;
+background:#22c55e;
+color:#fff;
+text-decoration:none;
+border-radius:8px;
+font-weight:600;
+}
+
+.card{
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(15px);
+padding:35px;
+border-radius:18px;
+border:1px solid rgba(255,255,255,.2);
+}
+
+.card h2{
+margin-bottom:25px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:18px;
+}
+
+.item{
+background:#fff;
+color:#111827;
+padding:20px;
+border-radius:12px;
+text-align:center;
+}
+
+.item h3{
+margin-bottom:10px;
+color:#2563eb;
+}
+
+.tech{
+padding:70px 8%;
+}
+
+.tech h2{
+text-align:center;
+margin-bottom:45px;
+font-size:36px;
+}
+
+.tech-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:25px;
+}
+
+.tech-card{
+background:white;
+color:#111827;
+padding:25px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 15px 30px rgba(0,0,0,.15);
+transition:.3s;
+}
+
+.tech-card:hover{
+transform:translateY(-8px);
+}
+
+.tech-card img{
+width:70px;
+height:70px;
+margin-bottom:15px;
+}
+
+.footer{
+margin-top:60px;
+padding:25px;
+text-align:center;
+background:#020617;
+color:#cbd5e1;
+}
+
+.status{
+margin-top:20px;
+padding:18px;
+background:#dcfce7;
+color:#166534;
+border-radius:10px;
+font-weight:bold;
+font-size:18px;
+}
+
+@media(max-width:900px){
+
+.hero{
+grid-template-columns:1fr;
+text-align:center;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header class="header">
+
+<div class="logo">
+AWS DevOps
+</div>
+
+</header>
+
+<section class="hero">
+
+<div>
+
+<h1>
+Ubuntu EC2 <span>Successfully Deployed</span>
+</h1>
+
+<p>
+
+This server has been provisioned automatically using
+Terraform Infrastructure as Code (IaC).
+
+Nginx has been installed successfully and is serving this
+website from an Ubuntu EC2 instance hosted on Amazon Web Services.
+
+</p>
+
+<a href="#" class="button">
+Infrastructure Running
+</a>
+
+</div>
+
+<div class="card">
+
+<h2>Deployment Summary</h2>
+
+<div class="grid">
+
+<div class="item">
+<h3>Cloud</h3>
+AWS EC2
+</div>
+
+<div class="item">
+<h3>OS</h3>
+Ubuntu 24.04
+</div>
+
+<div class="item">
+<h3>Web Server</h3>
+Nginx
+</div>
+
+<div class="item">
+<h3>IaC</h3>
+Terraform
+</div>
+
+<div class="item">
+<h3>Language</h3>
+Python Certified
+</div>
+
+<div class="item">
+<h3>Platform</h3>
+Linux
+</div>
+
+</div>
+
+<div class="status">
+
+Deployment Status : SUCCESS
+
+</div>
+
+</div>
+
+</section>
+
+<section class="tech">
+
+<h2>Technology Stack</h2>
+
+<div class="tech-grid">
+
+<div class="tech-card">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg">
+<h3>AWS Cloud</h3>
+<p>Elastic Compute Cloud</p>
+</div>
+
+<div class="tech-card">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-plain.svg">
+<h3>Ubuntu</h3>
+<p>Ubuntu 24.04 LTS</p>
+</div>
+
+<div class="tech-card">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg">
+<h3>Nginx</h3>
+<p>High Performance Web Server</p>
+</div>
+
+<div class="tech-card">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg">
+<h3>Terraform</h3>
+<p>Infrastructure as Code</p>
+</div>
+
+<div class="tech-card">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg">
+<h3>Python</h3>
+<p>Python Certified</p>
+</div>
+
+<div class="tech-card">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg">
+<h3>Linux</h3>
+<p>System Administration</p>
+</div>
+
+</div>
+
+</section>
+
+<footer class="footer">
+
+<h2>AWS Mumbai Region (ap-south-1)</h2>
+
+<p>
+
+Provisioned using Terraform • Ubuntu • Nginx • Linux • Python
+
+</p>
+
+<br>
+
+<p>
+
+© 2026 DevOps Infrastructure Demonstration
+
+</p>
+
+</footer>
+
+</body>
+</html>
